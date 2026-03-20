@@ -1,42 +1,103 @@
-# HexStrike AI MCP Agents v6.0
+# HexStrike AI MCP Agents v7.0 ULTRA - Enhanced Requirements
 #
 # INSTALLATION COMMANDS:
 # python3 -m venv hexstrike_env
 # source hexstrike_env/bin/activate
 # python3 -m pip install -r requirements.txt
 # python3 hexstrike_server.py
+#
+# ENHANCED MODULES (v7.0):
+# ✅ Cloud Orchestration (AWS, Azure, GCP)
+# ✅ Threat Intelligence Integration
+# ✅ Advanced Fuzzing Engine
+# ✅ Container Security Scanner
+# ✅ API Security Gateway
+# ✅ ML Anomaly Detection
+# ✅ Automated Report Generation
 
 # ============================================================================
-# CORE FRAMEWORK DEPENDENCIES (ACTUALLY USED)
+# CORE FRAMEWORK DEPENDENCIES
 # ============================================================================
-flask>=2.3.0,<4.0.0             # Web framework for API server (flask import)
-requests>=2.31.0,<3.0.0         # HTTP library (requests import)
-psutil>=5.9.0,<6.0.0            # System utilities (psutil import)
-fastmcp>=0.2.0,<1.0.0           # MCP framework (from mcp.server.fastmcp import FastMCP)
+flask>=2.3.0,<4.0.0             # Web framework for API server
+requests>=2.31.0,<3.0.0         # HTTP library
+psutil>=5.9.0,<6.0.0            # System utilities
+fastmcp>=0.2.0,<1.0.0           # MCP framework
 
 # ============================================================================
-# WEB SCRAPING & AUTOMATION (ACTUALLY USED)
+# WEB SCRAPING & AUTOMATION
 # ============================================================================
-beautifulsoup4>=4.12.0,<5.0.0   # HTML parsing (from bs4 import BeautifulSoup)
-selenium>=4.15.0,<5.0.0         # Browser automation (selenium imports)
-webdriver-manager>=4.0.0,<5.0.0 # ChromeDriver management (referenced in code)
+beautifulsoup4>=4.12.0,<5.0.0   # HTML parsing
+selenium>=4.15.0,<5.0.0         # Browser automation
+webdriver-manager>=4.0.0,<5.0.0 # ChromeDriver management
 
 # ============================================================================
-# ASYNC & NETWORKING (ACTUALLY USED)
+# ASYNC & NETWORKING
 # ============================================================================
-aiohttp>=3.8.0,<4.0.0           # Async HTTP (aiohttp import)
+aiohttp>=3.8.0,<4.0.0           # Async HTTP
 
 # ============================================================================
-# PROXY & TESTING (ACTUALLY USED)
+# PROXY & TESTING
 # ============================================================================
-mitmproxy>=9.0.0,<11.0.0        # HTTP proxy (mitmproxy imports)
+mitmproxy>=9.0.0,<11.0.0        # HTTP proxy
 
 # ============================================================================
-# BINARY ANALYSIS (CONDITIONALLY USED)
+# BINARY ANALYSIS
 # ============================================================================
-pwntools>=4.10.0,<5.0.0         # Binary exploitation (from pwn import *)
-angr>=9.2.0,<10.0.0             # Binary analysis (import angr)
-bcrypt==4.0.1                   # Pin bcrypt version for passlib compatibility (fixes pwntools dependency issue)
+pwntools>=4.10.0,<5.0.0         # Binary exploitation
+angr>=9.2.0,<10.0.0             # Binary analysis
+bcrypt==4.0.1                   # Pin bcrypt version
+
+# ============================================================================
+# ENHANCED MODULE DEPENDENCIES (v7.0 NEW)
+# ============================================================================
+
+# Machine Learning & Data Science
+scikit-learn>=1.3.0,<2.0.0      # ML algorithms (IsolationForest, etc.)
+numpy>=1.24.0,<2.0.0            # Numerical computing
+pandas>=2.0.0,<3.0.0            # Data manipulation
+scipy>=1.11.0,<2.0.0            # Scientific computing
+
+# Cloud Provider SDKs
+boto3>=1.28.0,<2.0.0            # AWS SDK
+azure-identity>=1.14.0,<2.0.0   # Azure authentication
+azure-mgmt-compute>=30.0.0,<31.0.0  # Azure compute management
+google-cloud-compute>=1.18.0,<2.0.0  # GCP compute
+
+# Container & Kubernetes Security
+docker>=6.1.0,<7.0.0            # Docker SDK
+kubernetes>=28.1.0,<29.0.0      # Kubernetes client
+
+# Threat Intelligence APIs
+shodan>=1.30.0,<2.0.0           # Shodan API client
+censys>=2.2.0,<3.0.0            # Censys API client
+virustotal-api>=1.4.0,<2.0.0    # VirusTotal API client
+
+# PDF & HTML Report Generation
+reportlab>=4.0.0,<5.0.0         # PDF generation
+jinja2>=3.1.0,<4.0.0            # HTML templating
+markdown>=3.4.0,<4.0.0          # Markdown processing
+weasyprint>=60.0,<61.0          # HTML to PDF conversion
+
+# Cryptography & Security
+cryptography>=41.0.0,<42.0.0    # Cryptographic primitives
+pyjwt>=2.8.0,<3.0.0             # JWT handling
+python-nmap>=0.7.1,<0.8.0       # Nmap integration
+
+# WebSocket & Real-time Communication
+websockets>=12.0,<13.0          # WebSocket support
+websocket-client>=1.6.0,<2.0.0  # WebSocket client
+
+# Task Queue & Distributed Processing
+celery>=5.3.0,<6.0.0            # Distributed task queue
+redis>=5.0.0,<6.0.0             # Redis client for caching
+
+# Image Processing
+Pillow>=10.0.0,<11.0.0          # Image processing
+qrcode>=7.4.0,<8.0.0            # QR code generation
+
+# Visualization
+matplotlib>=3.7.0,<4.0.0        # Plotting
+seaborn>=0.12.0,<0.13.0         # Statistical visualization
 
 # ============================================================================
 # EXTERNAL SECURITY TOOLS (150+ Tools - Install separately)
